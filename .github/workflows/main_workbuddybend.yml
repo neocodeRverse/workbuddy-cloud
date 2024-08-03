@@ -48,7 +48,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
-          name: workbuddybend
+          name: dotnet-app
           path: ${{ github.workspace }}/myapp
 
       - name: Deploy to Azure Web App
