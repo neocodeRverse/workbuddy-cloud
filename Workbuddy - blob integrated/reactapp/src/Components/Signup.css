@@ -1,0 +1,112 @@
+/* Signup.css */
+
+/* Signup container styles */
+.signup-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: linear-gradient(to right, #f2f2f2, #2ba1beb8);
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form {
+  max-width: 400px; /* This will limit the width of the form */
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #aaa;
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styles */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+.form-group input,
+.form-group select {
+  width: 90%;
+  padding: 10px;
+  border: none; /* Remove the border */
+  border-bottom: 1px solid #ccc; /* Add a bottom border */
+  border-radius: 0; /* Remove the border radius */
+  background: transparent; /* Make the background transparent */
+}
+
+/* Signup.css */
+
+/* Input and select hover styles */
+.form-group input:hover,
+.form-group select:hover {
+  border-bottom: 2px solid #0073e6; /* Change the bottom border color on hover */
+}
+
+/* Error styles */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Submit button styles */
+.submit-button {
+  width: 100%;
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #005aa6;
+}
+
+/* Success popup styles */
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #98c2ff;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #aaa;
+  text-align: center;
+}
+
+/* Additional styles for a blurred effect */
+.blur {
+  filter: blur(4px);
+}
+
+.required-asterisk{
+  color: red;
+}
+
+.form-group select option {
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 1.2em;
+}

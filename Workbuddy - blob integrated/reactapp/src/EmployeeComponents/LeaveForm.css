@@ -1,0 +1,141 @@
+.leave-form-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, select {
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  select {
+    cursor: pointer;
+  }
+  
+  .wfhbutton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .wfhbutton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 480px) {
+    .wfh-form-container {
+      max-width: 100%;
+    }
+  }
+  
+
+  .blur{    /* Your existing styles for the content here */
+    filter: blur(2px);
+    pointer-events: none;
+     /* Apply a blur filter to the content */
+  }
+  
+.modalpopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dddddd; /* Change the background color to a green */
+  border: none; /* Remove the border */
+  padding: 10px; /* Reduce padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  z-index: 2; /* Above the overlay */
+  width: 200px; /* Reduce width */
+  color: rgb(0, 0, 0); /* Change the text color to white */
+  font-size: 14px; /* Reduce font size */
+  animation: popup 1s; /* Add an animation */
+}
+  .modalpopup button {
+    margin-top: 20px; /* Add some top margin */
+    padding: 10px 20px; /* Increase padding */
+    border: none; /* Remove border */
+    background-color: white; /* Change the background color */
+    color: #4caf50; /* Change the text color */
+    cursor: pointer; /* Change the cursor when hovering over the button */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s, color 0.3s; /* Add a transition */
+  }
+
+  .modalpopup button:hover {
+    background-color: #4caf50; /* Change the background color on hover */
+    color: white; /* Change the text color on hover */
+  }
+
+  /* Add keyframes for the animation */
+  @keyframes popup {
+    0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  }
+
+
+  #backButton{
+    float: left;
+    display: block;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3498db; /* Change the background color */
+    color: white; /* Change the text color */
+    border: none; /* Remove the border */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove the underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Change the cursor when hovering over the button */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  .back-button:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+  }
+  .Editheading{
+     margin-top: 30px;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Below the popup */
+  }
+  
