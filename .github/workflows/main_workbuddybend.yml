@@ -21,15 +21,15 @@ jobs:
 
       - name: Restore dependencies
         run: |
-          cd Workbuddy - blob integrated/dotnetapp  # Adjust this path to your project directory
+          cd workbuddy/dotnetapp/  # Adjust this path to your project directory
           dotnet restore
       - name: Build with dotnet
         run: |
-          cd Workbuddy - blob integrated/dotnetapp  # Adjust this path to your project directory
+          cd workbuddy/dotnetapp/  # Adjust this path to your project directory
           dotnet build --configuration Release
       - name: Publish artifact
         run: |
-          cd Workbuddy - blob integrated/dotnetapp  # Adjust this path to your project directory
+          cd workbuddy/dotnetapp/  # Adjust this path to your project directory
           dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
       - name: Upload artifact for deployment
         uses: actions/upload-artifact@v2
