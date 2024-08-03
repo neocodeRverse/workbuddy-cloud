@@ -42,7 +42,7 @@ jobs:
     needs: build
     environment:
       name: 'Dev'
-      url:  'workbuddybend.azurewebsites.net' # Replace with your Azure Web App URL
+      url:  'https://workbuddybend.azurewebsites.net' # Replace with your Azure Web App URL
     
     steps:
       - name: Download artifact
