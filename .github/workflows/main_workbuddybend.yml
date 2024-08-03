@@ -57,5 +57,5 @@ jobs:
         with:
           app-name: 'workbuddybend'  # Replace with your Azure Web App name
           slot-name: 'Dev'  # Replace with your Azure Web App deployment slot
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9CB450E3E1CC4B3E953845E3D41842F1  }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9CB450E3E1CC4B3E953845E3D41842F1 }}
           package: ${{ github.workspace }}/myapp  # Adjust this path if needed
