@@ -1,4 +1,4 @@
-name: Build and deploy ASP.Net Core app to Azure Web App - eduhubapp24
+name: Build and deploy ASP.Net Core app to Azure Web App - Workbuddy
 
 on:
   push:
@@ -57,5 +57,5 @@ jobs:
         with:
           app-name: 'workbuddybend'  # Replace with your Azure Web App name
           slot-name: 'Dev'  # Replace with your Azure Web App deployment slot
-          publish-profile: ${{ secrets.workbuddybend - Web Deploy }}  # Replace with your Azure Web App publish profile
+          publish-profile: <publishData><publishProfile profileName="workbuddybend - Web Deploy" publishMethod="MSDeploy" publishUrl="workbuddybend.scm.azurewebsites.net:443" msdeploySite="workbuddybend" userName="$workbuddybend" userPWD="l6XJjxQfvjApvyhBi5gmDupN8tTodaDqN8Zjeo6PlmnZTvv7ssPf6Kf1qKhG" destinationAppUrl="https://workbuddybend.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="https://portal.azure.com" webSystem="WebSites"><databases /></publishProfile><publishProfile profileName="workbuddybend - FTP" publishMethod="FTP" publishUrl="ftps://waws-prod-blu-543.ftp.azurewebsites.windows.net/site/wwwroot" ftpPassiveMode="True" userName="workbuddybend\$workbuddybend" userPWD="l6XJjxQfvjApvyhBi5gmDupN8tTodaDqN8Zjeo6PlmnZTvv7ssPf6Kf1qKhG" destinationAppUrl="https://workbuddybend.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="https://portal.azure.com" webSystem="WebSites"><databases /></publishProfile><publishProfile profileName="workbuddybend - Zip Deploy" publishMethod="ZipDeploy" publishUrl="workbuddybend.scm.azurewebsites.net:443" userName="$workbuddybend" userPWD="l6XJjxQfvjApvyhBi5gmDupN8tTodaDqN8Zjeo6PlmnZTvv7ssPf6Kf1qKhG" destinationAppUrl="https://workbuddybend.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="https://portal.azure.com" webSystem="WebSites"><databases /></publishProfile></publishData>
           package: ${{ github.workspace }}/myapp  # Adjust this path if needed
